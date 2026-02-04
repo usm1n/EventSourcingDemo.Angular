@@ -191,8 +191,20 @@ import {
     .action-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
     .action-card { background: #f9fafb; padding: 16px; border-radius: 8px; }
     .action-card h4 { margin: 0 0 12px 0; }
-    .form-row { display: flex; gap: 8px; margin-bottom: 12px; }
-    .form-row input { flex: 1; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; }
+ .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
     select { width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; margin-bottom: 8px; }
 
     .btn { padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
